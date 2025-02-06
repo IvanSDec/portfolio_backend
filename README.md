@@ -1,6 +1,6 @@
 # Portfolio Backend  
 
-> [!IMPORTANT]  
+> [!NOTE]  
 >   **Diseñado y desarrollado por:**  
 >   Iván A. Sánchez Carrillo  
 
