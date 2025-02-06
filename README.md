@@ -1,18 +1,63 @@
-## PORFOLIO BACKEND ##
-Portafolio Backend diseñado y desarrollado por:
-    - Iván A. Sánchez Carrillo
+# Portfolio Backend  
 
-## TECNOLOGIAS ##
-    - NestJS - Backend
-    - Arquitectura basada en la estructura de Prisma
-    - Postgres - Base de datos
-    - Preparado para despliegue en AWS
+> [!IMPORTANT]  
+>   **Diseñado y desarrollado por:**  
+>   Iván A. Sánchez Carrillo  
 
-## INSTRUCCIONES ## 
-    // BACKEND //
+## Descripción  
+    Este proyecto es el backend del portfolio personal, desarrollado 
+    para gestionar datos y proporcionar una API segura y eficiente. 
+    Está diseñado para soportar el frontend autoadministrable y cuenta 
+    con una arquitectura escalable y preparada para producción en la nube.  
+
+## Características principales  
+- **API RESTful segura:** Proporciona endpoints estructurados para la administración del contenido.  
+- **Base de datos relacional:** Utiliza PostgreSQL con Prisma para una gestión eficiente de datos.  
+- **Arquitectura modular:** Implementa una estructura limpia basada en NestJS.  
+- **Preparado para despliegue en AWS:** Listo para ejecutarse en la nube con configuración optimizada.  
+
+## Tecnologías utilizadas  
+- **Backend:** NestJS  
+- **Base de datos:** PostgreSQL con Prisma  
+- **Arquitectura:** Modular y basada en Prisma  
+- **Despliegue:** Preparado para AWS (Amazon Web Services)  
+
+## Instalación  
+Sigue estos pasos para configurar el backend en tu entorno local:  
+
+1. Clona el repositorio:  
+   ```bash
+   git clone https://github.com/IvanSDec/portfolio_backend
+
+2. Instala las dependencias:
+    ```bash
     npm install
-    npm run start:dev (para desarrollo)
-    npm run build (para producción)
-    npm run start (para producción)
 
-    Asegúrate de configurar las variables de entorno para conectar con la base de datos (Postgres) y Prisma.
+3. Ejecuta el servidor de desarrollo:
+    ```bash
+    npm run start:dev
+
+4. Para compilar el proyecto para producción:
+    ```bash
+    npm run build
+
+5. Para iniciar el servidor en producción
+   ```bash
+   npm run start
+
+## Despliegue
+    Este backend está configurado para ser desplegado en AWS. 
+    Asegúrate de tener configuradas las credenciales de AWS y 
+    sigue las instrucciones de despliegue en la documentación oficial.
+
+> [!IMPORTANT]
+>   Si tienes alguna duda o sugerencia, no dudes en contactarme:
+> 
+>   [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/ivanscarrillomx/)
+> 
+>   [![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/profile.php?id=100001168921982)
+> 
+>   [![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/IvnSnch64591889)
+
+## Licencia
+    Este proyecto está bajo la licencia GNU.
