@@ -12,14 +12,14 @@
 
 ## Características principales  
 - **API RESTful segura:** Proporciona endpoints estructurados para la administración del contenido.  
-- **Base de datos relacional:** Utiliza PostgreSQL con Prisma para una gestión eficiente de datos.  
-- **Arquitectura modular:** Implementa una estructura limpia basada en NestJS.  
+- **Base de datos relacional:** Utiliza PostgreSQL con Sequelize para una gestión eficiente de datos.  
+- **Arquitectura modular:** Implementa una estructura limpia basada en NodeJS.  
 - **Preparado para despliegue en AWS:** Listo para ejecutarse en la nube con configuración optimizada.  
 
 ## Tecnologías utilizadas  
-- **Backend:** NestJS  
-- **Base de datos:** PostgreSQL con Prisma  
-- **Arquitectura:** Modular y basada en Prisma  
+- **Backend:** NodeJS  
+- **Base de datos:** PostgreSQL 
+- **Arquitectura:** Sequelize en MVS (JS)
 - **Despliegue:** Preparado para AWS (Amazon Web Services)  
 
 ## Instalación  
@@ -35,7 +35,7 @@ Sigue estos pasos para configurar el backend en tu entorno local:
 
 3. Ejecuta el servidor de desarrollo:
     ```bash
-    npm run start:dev
+    npm run dev
 
 4. Para compilar el proyecto para producción:
     ```bash
