@@ -49,11 +49,28 @@ const Users = sequelize.define('Users', {
     tableName: 'Users',
     timestamps: true,
     underscored: true,
+    defaultScope: {
+        attributes: { exclude: ['password'] }
+    },
+    scopes: {
+        withPassword: {
+            attributes: { include: ['password'] }
+        }
+    },
 });
+
+Users.prototype.comparePassword = async function (candidatePassword) {
+    return await bcrypt.compare(candidatePassword, this.password);
+};
 
 Users.beforeCreate(async (user) => {
     const salt = await bcrypt.genSalt(10);
     user.password = await bcrypt.hash(user.password, salt);
 });
+
+Users.addHook('afterCreate', (user) => {
+    user.password = undefined; 
+});
+
 
 module.exports = Users;
