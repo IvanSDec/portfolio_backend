@@ -1,10 +1,10 @@
-const sequelize = require('../utils/connect');
-const bcrypt = require('bcrypt');
-const { DataTypes } = require('sequelize');
+import sequelize from '../utils/connect.js';
+import bcrypt from 'bcrypt';
+import { DataTypes } from 'sequelize';
 
 /**
  * @author Iván Sánchez
- * @description define *Users* model
+ * @description Define el modelo de *Users*
  * */
 const Users = sequelize.define('Users', {
     id_user: {
@@ -73,4 +73,4 @@ Users.addHook('afterCreate', (user) => {
 });
 
 
-module.exports = Users;
+export default Users;

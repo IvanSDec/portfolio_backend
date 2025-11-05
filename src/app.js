@@ -1,9 +1,20 @@
-const express = require('express');
+import express from 'express';
+import cors from 'cors';
+import router from './routes/routes.js'
+
 const app = express();
-const router = require('./routes/routes')
 
-app.use(express.json())
+// Habilitar CORS
+app.use(
+  cors({
+    origin: 'http://localhost:5173',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true, 
+  })
+);
 
-app.use('/api/v1', router)
+app.use(express.json());
 
-module.exports = app;
+app.use('/api/v1', router);
+
+export default app;
