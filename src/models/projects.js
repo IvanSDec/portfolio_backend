@@ -28,11 +28,11 @@ const Projects = sequelize.define('Projects', {
         allowNull: false,
     },
     dev_time:{
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: false,
     },
     description:{
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
         allowNull: false,
     },
     project_image:{

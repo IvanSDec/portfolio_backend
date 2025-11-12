@@ -4,7 +4,6 @@ import router from './routes/routes.js'
 
 const app = express();
 
-// Habilitar CORS
 app.use(
   cors({
     origin: 'http://localhost:5173',
